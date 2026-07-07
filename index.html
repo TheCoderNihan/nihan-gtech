@@ -2,18 +2,30 @@
     <html lang="en">
         <head>
             <title>My Website 123</title>
+            <link rel="icon" type="image/png" href="favicon-50.png">
         </head>
         <body>
             <h1>Main Heading</h1>
             <p>First Paragraph - this is a html website</p>
+
             <h2>Country</h2>
+            <!--Links are created using the <a> tag-->
             <a href="https://www.w3schools.com/">Click this to access the link</a>
+            <!--This is a comment-->
+            <p>A comment is given</p>
+            <p style="color: brown;">This is a brown text</p>
+            <p style="background-color:yellow;">This has yellow background</p>
+            <p style="border: 2px solid blue;">This text has a blue border.</p>
             <hr>
+            
             <h3>India</h3>
+            <!--Image given using img tag-->
             <img src="charminar.jpg" alt="An image of charminar" width="200" height="200" title="Image of Charminar ; displayed using title attribute">
             <p>Charminar is located in Hyderabad. <br> Hyderabad is located in Telengana</p>
             <hr>
-            <h3>Japan</h4>
+            
+            <h3>Japan</h3>
+            <!--The below style paragraphs are all inline css-->
             <p style="color:red;">This is a red paragraph</p>
             <p style="color:aqua;">This is in aqua color</p>
             <p style="font-size:50px;">This is big text</p>
@@ -21,15 +33,89 @@
             <p>This is <i>italic</i> text</p>
             <p>This is <mark>highlighted</mark> text</p>
             <hr>
-            <h3>UAE</h5>
+            
+            <h3>UAE</h3>
             <p title="Displayed 'when you hover' over it using title attribute">This is a paragraph (try hovering)</p>
+            <table border="1">
+                <tr>
+                    <th>Emirate</th>
+                    <th>Ruling Dynasty</th>
+                </tr>
+                <tr>
+                  <td>Abu Dhabi</td>  
+                  <td>Al Nahyan</td>
+                </tr>
+                <tr>
+                    <td>Dubai</td>
+                    <td>Al Maktoum</td>
+                </tr>
+                <tr>
+                    <td>Sharjah</td>
+                    <td>Al Qasimi</td>
+                </tr>
+                <tr>
+                    <td>Ras Al Khaima</td>
+                    <td>Al Qasimi</td>
+                </tr>
+                <tr>
+                    <td>Ajman</td>
+                    <td>Al Nuaimi</td>
+                </tr>
+                <tr>
+                    <td>Umm Al Quwain</td>
+                    <td>Al Mualla</td>
+                </tr>
+                <tr>
+                    <td>Fujairah</td>
+                    <td>Al Sharqi</td>
+                </tr>
+            </table>
+           
+            <!--Lists are of 2 types : Ordered and Unordered-->
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+            <ol>
+                <li>Apple</li>
+                <li>Mango</li>
+            </ol>
             <hr>
-            <h3>HTML Quotations</h6>
+            
+            <h3>HTML Quotations and useful blocks</h3>
             <p>W3Schools says: <q>HTML is easy to learn.</q></p>
             <blockquote>HTML is the basic language used to create web pages.</blockquote>
             <p><cite>The Mona Lisa</cite> was painted by Leonardo da Vinci.</p>
             <p><abbr title="HyperText Markup Language">HTML</abbr> is used to build websites.</p>
             <address>Created by Nihan<br>Kannur, Kerala</address>
+            <button>Click Me</button> <!--For buttons to click-->
+
+            <div style="background-color: lightblue;">
+                <h2>Welcome</h2>
+                <p>This is inside a div block</p>
+            </div>
+            
+            <h3>Styles of CSS</h3>
+            <style>
+                .highlight{
+                    color: red;
+                    font-weight: bold;
+                }
+            </style>
+            <!--Accessed using styles-->
+            <p class="highlight">This is highlighted</p>
+            <p class="highlight">The design is given using style block</p>
+            <br>
+
+            <p>Button given functionality using Javascript in <html></html></p>
+            <button onclick="alert('Hello User')">Click Me</button>
+            <br>
+
+            <p>iframe used to embed yt videos , websites , maps etc</p>
+            <iframe src="https://www.wikipedia.org" width="400" height="400"></iframe>
+
             <hr>
+
         </body>
     </html>
