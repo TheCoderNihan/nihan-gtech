@@ -5,6 +5,9 @@
             <link rel="icon" type="image/png" href="favicon-50.png">
         </head>
         <body>
+            <header>My Website given using header tag</header>
+            <nav>Home | About | Contact etc. given using nav tag</nav>
+
             <h1>Main Heading</h1>
             <p>First Paragraph - this is a html website</p>
 
@@ -114,8 +117,70 @@
 
             <p>iframe used to embed yt videos , websites , maps etc</p>
             <iframe src="https://www.wikipedia.org" width="400" height="400"></iframe>
+            <br>
+
+            <pre> <!--pre use for idendation . code used for giving code block-->
+                <code>
+                    print("Hello World")
+                    for i in range(10):
+                        print(i)
+                </code>
+            </pre>
+            <hr>
+
+            <h2>HTML Forms</h2>
+            
+            <!--action specifies where the data is sent , method specifies how the data is sent.-->
+            <form action="/submit" method="post">
+
+                <h3>Registration Form</h3>
+
+                <label>Full name:</label> <!--br used to give proper idendation for the form-->
+                <input type="text" placeholder="Your Name" required> <br><br>
+
+                <label>Email</label>
+                <input type="email" placeholder="Your Email" required> <br><br>
+
+                <label>Phone Number:</label>
+                <input type="number"> <br><br>
+
+                <label>Date of Birth:</label>
+                <input type="date"> <br><br>
+
+                <label>Password:</label>
+                <input type="password" required> <br><br>
+
+                <p>Gender:</p> <!--Radio used when only 1 option can be choosed-->
+                <input type="radio" name="gender" value="male"> male
+                <input type="radio" name="gender" value="female"> female <br><br>
+                
+                <p>Languages:</p> <!--Checkbox used when more than 1 options canbe choosed-->
+                <input type="checkbox" value="HTML"> HTML
+                <input type="checkbox" value="CSS"> CSS
+                <input type="checkbox" value="JS"> Javascript <br><br>
+
+                <label>Country:</label>
+                <select>
+                    <option>India</option>
+                    <option>UAE</option>
+                    <option>Saudi Arabia</option>
+                    <option>Other</option>
+                </select> <br><br>
+
+                <textarea rows="4" cols="30" placeholder="Write your message"></textarea> <br><br>
+
+                <label>Upload File:</label>
+                <input type="file"> <br><br>
+
+                <input type="submit" value="Register">
+
+            </form>
+
 
             <hr>
+            <footer>Last Text which includes privacy policy , address etc. given in footer tag</footer>
+            <p>&copy , &amp are reserved symbols dispalyed using html entities</p>
+            <p>&hearts; Made With Love ( emoji displayed using entities ) </p>
 
         </body>
     </html>
