@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+
+            body {
+                background-color: yellow;
+            }
+            /*This is an universal selector. It selects all the html elements on the page*/
+            *{
+                text-align: right;
+                color:green;
+                font-size: large;
+            }
+            
+            /*This is a grouping selector. Selects all elements with this definitions*/
+            h2,p {
+                text-align: center;
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <p>Every elements on the page will be affected</p>
+        <h1>This is of universal selector</h1>
+        <h2>This belongs in grouping selector</h2>
+        <h2>If universal and grouping seletor is in conflict , grouping is given preference</h2>
+    </body>
+</html>
