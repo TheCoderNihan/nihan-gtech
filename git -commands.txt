@@ -1,0 +1,11 @@
+1. git status
+# Checks changes in your project
+
+2. git add .
+# Makes changes ready for the next commit
+
+3. git commit -m "your_message"
+# Saves locally with a descriptive message
+
+4. git push
+# Uploads the committed changes to the github repository
