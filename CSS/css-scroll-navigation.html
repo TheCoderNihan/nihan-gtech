@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--UTF-8 allows your webpage to display almost every language and symbol correctly.-->
+        <meta charset="UTF-8">
+        <title>Scroll bar and Navigation bar</title>
+
+        <style>
+            body{
+                margin:0; /*The content touches the edge. No default white space around the page*/
+                font-family: Arial, Helvetica, sans-serif
+            }
+
+            /*Navigation Bar*/
+            .navbar {
+                list-style: none; /*No bullet points*/
+                display: flex; /*Everything is displayed horizontally*/
+                background-color: gray;
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar li a { /*Select every link (a tag) inside every list item (li) inside the navbar.*/
+                color: white;
+                padding: 15px 20px;
+                text-decoration: none; /*Removes the link underline*/
+                display: block;
+            }
+
+            .navbar li a:hover {
+                background-color: wheat;
+            }
+
+            /*Content area*/
+            .content {
+                padding: 20px;
+            }
+
+            /*Scroll Bar*/
+            .scroll-box {
+                width:300px;
+                height: 120px;
+                border: 2px solid black;
+                padding: 10px;
+                overflow: auto; /*The extra text can be viewed by scrolling without losing it or going outside the box*/
+            }
+
+            .scroll-box::-webkit-scrollbar { /*Pseudo-element ; selects the scroll-bar*/
+                width: 8px;
+            }
+
+            .scroll-box::-webkit-scrollbar-thumb { /*Selects the scroll-bar thump*/
+                background-color: darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!--Page Content-->
+        <div class="content">
+            <h1>Scroll Bar Example</h1>
+            <div class="scroll-box">
+                A scroll box is used when the content inside an element is larger than the available space.
+                Instead of increasing the size of the element, the browser displays a scrollbar so that users can scroll through the hidden content.
+                This helps keep web pages neat and organized while still allowing access to all the information.
+                Scroll boxes are commonly used in chat applications, comment sections, terms and conditions, code editors, long tables, and news feeds where a large amount of content needs to fit inside a limited area.
+            </div>
+        </div>
+    </body>
+</html>
