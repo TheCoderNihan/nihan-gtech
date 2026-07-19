@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.header {
+    background-color: goldenrod;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.introduction {
+    font-size: xx-large;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    background-color: beige;
+    flex: 1;
+}
+
+.footer {
+    background-color: brown;
+    text-align: center;
+    color: white;
+    padding: 10px;    
+}

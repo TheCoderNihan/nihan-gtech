@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: goldenrod;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.introduction {
+    text-align: center;
+    font-size: xx-large;
+}
+
+body {
+    display: flex; /*Turns body into flex-box layout system*/
+    flex-direction: column; /*Flexbox arranges items in row by default. This stacks the flex items vertically from top to bottom.*/
+    min-height: 100vh; /*vh is viewpoint height that is the height of your browser window*/
+    /*100vh means entire screen height. min-height means if there is overflow of content, then it can grow longer if needed but minimum 100vh here.*/
+}
+
+.content {
+    background-color: beige;
+    flex: 1;   /* Makes the element grow and fill the remaining available space so footer will be last */
+}
+
+.footer {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

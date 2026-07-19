@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: goldenrod;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.footer {
+    background-color: brown;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.content {
+    background-color: beige;
+    padding: 30px;
+    flex: 1;
+    font-size: x-large;
+}
+
+.introduction {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    width: 200px;
+    background-color: rgb(72, 56, 17);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgoldenrod;
+}

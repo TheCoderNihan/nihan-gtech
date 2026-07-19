@@ -1,0 +1,58 @@
+*{
+    margin: 0;  /*Removes default outside spacing*/
+    padding: 0;  /*Removes default inside spacing*/
+    box-sizing: border-box; /* Makes element sizing easier by including padding and border in its width and height */
+}
+
+.header {
+    background-color: goldenrod;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    min-height: 90vh;
+}
+
+.sidebar {
+    width: 15%;
+    background-color: wheat;
+    padding: 20px;
+}
+
+.sidebar a { /*To remove the underline of the links in default html*/
+    text-decoration: none;
+    color: black;
+    display: block; /*With block , the whole raw becomes clickable*/
+}
+
+.sidebar a:hover { /*For hover feature when going through the sidebar*/
+    background-color: rgb(91, 67, 7);
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    font-size: x-large
+}
+
+.sidebar li {
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+
+.content {
+    width: 88%;
+    padding: 20px;
+    background-color: beige;
+    font-size: x-large;
+}
+
+.footer {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
