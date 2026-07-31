@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Navigation Bar and forms</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <!--Navigation  Bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!--navbar creates bs navigation bar. expand-lg expands for large screen size. nb-dark makes text and icon suitable for dark bg.-->
+            <!--navbar is usually outside the div block so that it can expand to the full screen size.-->
+            
+            <div class="container">
+                <a class="navbar-brand" href="#">My website</a> <!--nb-brand displays website name and logo-->
+
+                <!--Toggle(hamburger) button - only appears in small screen-->
+                <!--nb-toggler styles button as bs menu button. data-bs-target specifies which element should collapse-->
+                <button class="navbar-toggler type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Navbar Links-->
+                <div class="collapse navbar-collapse" id="navbarContent"> <!--Makes the menu collapsable-->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!--nb-nav styles list as navbar items. ms-auto pushes menu to the right.-->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a> <!--active highlights the current page-->
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Form Section-->
+        <div class="container mt-5">
+            <p class="fs-5">
+                In forms, each related input elements are put in individual div block for easier styling.
+                form-label applies bs styling to label, form-control gives style to input field.
+            </p>
+
+            <h2 class="text-center mt-4 mb-4">Registration Form</h2>
+            <form>
+
+                <div class="mb-3"> <!--Name-->
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your name" required>
+                </div>
+
+                <div class="mb-3"> <!--Email-->
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+
+                <div class="mb-3"> <!--Password-->
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="Enter your password" required>
+                </div>
+
+                <div class="mb-3"> <!--Number-->
+                    <label class="form-label">Phone Number</label>
+                    <input type="number" class="form-control" placeholder="Enter your number">
+                </div>
+
+                <div class="mb-3"> <!--Gender-->
+                    <label class="form-label">Gender</label> <br>
+                    <div class="form-check form-check-inline"> <!--form-check-inline places radio button on same line-->
+                        <input class="form-check-input" type="radio" name="gender">
+                        <label class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender">
+                        <label class="form-check-label">Female</label>
+                    </div>
+                </div>
+
+                <div class="mb-3"> <!--Date-->
+                    <label class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control">
+                </div>
+
+                <div class="mb-3"> <!--File-->
+                    <label class="form-label">Upload Photo</label>
+                    <input type="file" class="form-control">
+                </div>
+
+                <div class="mb-3"> <!--Option Select-->
+                    <label class="form-label">Course</label>
+                    <select class="form-select">
+                        <option>Full-Stack</option>
+                        <option>Android Development</option>
+                        <option>Blockchain</option>
+                        <option>Cybersecurity</option>
+                    </select>
+                </div>
+
+                <div class="mb-3"> <!--Checkbox-->
+                    <input class="form-check-input" type="checkbox" required>
+                    <label class="form-check-label">Accepts Terms and Conditions</label>      
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button> <!--Submit-->
+
+            </form>      
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

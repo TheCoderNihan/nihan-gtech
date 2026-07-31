@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Carousel</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+        <style>
+            body {
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <h2 class="text-center text-dark">Bootstrap Carousel</h2>
+            <p class="fs-5">
+                A Bootstrap Carousel is a slideshow component that displays a series of images or content one after another.<br>
+                id gives carousel a unique id that other buttons can refer to.<br>
+                Indicators create small dot below the images to represent each slide.<br>
+                Every slide has its own div element for easy styling.<br>
+                d-block display slide as block element. BS recommends it so slides fills the available width properly inside the carousel. <br>
+                The recommended image is proper landscape image , 1200*600 px. <br>
+            </p>
+
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!--slide adds sliding animation. data-bs-ride="carousel" automatically changes image every few seconds.-->
+
+                <div class="carousel-indicators"> <!--Indicators-->
+                    <button data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+                    <!--Programming starts counting from 0. So, data-bs-slide-to="0" go to Slide 1.-->
+
+                    <button data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner"> <!--Slides-->
+                    <div class="carousel-item active"> <!--First Slide-->
+                        <img src="carousel-img-1.png" class="d-block w-100" alt="Slide 1">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="carousel-img-2.png" class="d-block w-100" alt="Slide 2">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="carousel-img-3.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                </div>
+
+                <!--Controls-->
+                <button class="carousel-control-prev" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>  <!--here the class element styles the prev icon-->
+
+                <button class="carousel-control-next" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>  <!--here class element styles the next icon-->
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
