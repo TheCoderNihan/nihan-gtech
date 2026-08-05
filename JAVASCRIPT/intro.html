@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Intro</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Javascript introduction</h2>
+        <p>JavaScript is Lightweight and fast, Interpreted language, Object-based, Event-driven, Cross-platform</p>
+        <p>Single-line comments is given using //</p>
+        <p>Multi-line comments is given using /* xyz */</p>
+        
+        <button onclick="alert('Hello World')">Click Me (Inline JS)</button> <!--Inline JS-->
+        <script src="intro.js"></script> <!--External JS-->
+
+        <script> <!--Internal JS-->
+            alert('This is internal JS. (1)');
+            alert('Internal JS is placed in body because the browser loads the HTML first. (2)');
+            alert('After the HTML is loaded, JavaScript runs. (3)');
+            alert('This means JavaScript can safely access HTML elements. (4)');
+        </script>
+    </body>
+</html>
