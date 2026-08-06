@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Accessing HTML elements</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Ways to access html elements</h1>
+        <p>We can access HTML elemnts by its ID , its class , its html tag name and using querySelector()</p>
+        <p>
+            To check if input tag is empty is JS, we check with === because an empty input returns an empty string(""), not null or undefined.
+        </p>
+        <p>=== is called the strict equality operator is JS, it checks both the value and the data type.</p>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name"> <br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age"> <br><br>
+        <button onclick="loginFunction()">Login</button>
+
+        <br><br>
+        <h1 style="text-align: center;">Forms</h1>
+        <form onsubmit="submit(event)"> <!--onsubmit runs the login function. event is passed in function because we use event for preventDefault.-->
+            <input type="text" id="email" placeholder="Enter your email" required> <br><br>
+            <input type="password" id="password" placeholder="Enter your password" required> <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+
+        <script src="js-access-elements.js"></script>
+    </body>
+</html>

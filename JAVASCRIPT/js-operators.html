@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Operators</title>
+    </head>
+    <body>
+        <h1 style="text-align: center; font-style: italic; color: red;">JS Operators</h1>
+        <p>JS has arithmetic, assignment, comparision, logical, bit-wise, string operators etc.</p>
+        <p>Arithmetic Operators: Used for mathematical calculations.</p>
+        <p>Assignment Operators: Used to assign values.</p>
+
+        <p>Comparison Operators: Used to compare values and return true or false.</p>
+        <p>We have > , < , >= , <= for comparison.</p>
+        <p>== is only to check if value is equal , === checks value and type</p>
+        <p>Similar for != and !== </p>
+
+        <p>logical Operators: Used to combine conditions.</p>
+        <p>We have AND ( && ) , OR ( || ) and NOT ( ! )</p>
+
+        <p>Bitwise Operators: Used for bit-level operations.</p>
+        <p>Ternary Operator: Used as a shortcut for if...else.</p>
+        <p>Type Operator: Used to determine the data type of a value or variable.</p>
+        <p>String Operators: Used to concatenate (join) strings.</p>
+        <p>Check console for JS output</p>
+
+        <script>
+            //Arithmetic Operators
+            let a = 10;
+            let b = 5;
+            console.log("a = "+a , "b = "+b);
+            console.log( a + b );
+            console.log( a * 5 );
+            console.log( a / b );
+            console.log( a % b );
+            a++;
+            console.log(a);
+            b++;
+            console.log(b);
+
+            //Assignment Operators
+            a += 5;
+            b -= 5;
+            let c = 2;
+            let d = 20;
+            c *= 10;
+            d /= 4;
+            console.log(a);
+            console.log(b);
+            console.log(c);
+            console.log(d);
+
+            let first = "Hello";  // String Concatenation
+            let second = "World";
+            console.log(first + second);
+
+            console.log(typeof a); // typeof operator
+
+            // Comparison Operator
+            let e = 5;
+            let f = "5";
+            console.log( e == f ); // this will be true (value)
+            console.log( e === f ); // this will be false (value and type)
+
+        </script>
+    </body>
+</html>
