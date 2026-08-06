@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Variables</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">JS Variables</h1>
+        <p>A variable is a named container that stores data, that can be used later in program.</p>
+        <p>
+            3 methods of declaring: var, let and const. var is old method whose value canbe changed. 
+            let is modern whose value canbe changed. const is constant value, it cant be changed.  
+        </p>
+        <p>JS has dynamic typing, it automatically undeestand the data type of a value. No need to declare it</p>
+        <p>JS has 8 datatypes:
+            <br>Strings (stores text) 
+            <br>Number ( stores integers and decimal numbers , no seperate int and float types in JS )
+            <br>Boolean ( true or false )
+            <br>Undefined ( A variable has been declared but no value is assigned )
+            <br>Null ( represents empty value )
+            <br>Object ( stores related data together; like dictionary )
+            <br>BigInt ( Used for very large integers )
+            <br>Arrays ( Arrays are technacally an object in JS , not seperate datatype )
+        </p>
+        <p>Click F12 for console to see results.</p>
+
+        <script>
+
+            let age = 10;
+            console.log(age);
+            age = 26;
+            console.log(age);
+            
+            const country = "India";
+            console.log(country);
+
+            let isStudent = true;
+            console.log(isStudent);
+
+            let city; //Undefined
+            console.log(city);
+
+            let student = {
+                name: "Adam",
+                age: 16
+            };
+            console.log(student);
+            console.log(student.age);
+
+            let fruits = ["Apple", "Banana", "Orange"];
+            console.log(fruits);
+
+        </script>        
+    </body>
+</html>

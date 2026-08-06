@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Function</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">JavaScript Function</h1>
+        <p style="font-size: large;">Functions are reusable. We can use it by just calling its name.</p>
+
+        <button onclick="functionName()">Normal Function</button>
+        <br>
+
+        <p>Arrow functions provide a shorter syntax for writing functions in JavaScript.</p>
+        <p>Unlike a normal function, an arrow function is stored inside a variable.</p>
+        <button onclick="showMessage()">Arrow Function</button>
+
+        <script>
+            function functionName() {
+                alert("This is executed from the function.");
+            }
+
+            const showMessage = () => {   // Here no parameters
+                alert("Hello from arrow function");
+            }
+        </script>
+    </body>
+</html>
