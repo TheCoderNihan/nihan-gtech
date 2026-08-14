@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Conditional Loops</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">JS Conditional Loops</h1>
+        <p>Loops keeps running when a condition is true and stops when the condition is false.</p>
+        <p>while loop checks the condition first , then run the code.</p>
+        <p>do...while runs the code atleast once, even if condition is false.</p>
+        <p>for loop is used when the start, condition and increment are known.</p>
+        <p>Syntax : for ( initialisation ; condition ; increment ) { //code }</p>
+        <p>do-while needs a semicolon(;) at the end of the while(condition) statement.</p>
+        <p>break is used to stop the  current statement working and exit from the loop.</p>
+        <p>continue skips the current loop iteration and moves to the next iteration.</p>
+        <p>break  and continue does not work in if-else statements. They only work with loops.</p>
+        <p>A variable declared inside a loop is block-scoped. Therefore, it only exists inside the loop.</p>
+        <p>Press F12</p>
+
+        <script>
+            
+            let i = 1;
+            while ( i <= 5 ) {
+                console.log(i);
+                i++;
+            }
+            console.log("After loop i becomes "+ i);
+
+            console.log("continie and break");
+            for ( let j = 1 ; j <= 10 ; j++) {
+                if ( j == 3 ) {
+                    console.log("continue statement");
+                    continue;
+                }
+                if ( j == 8 ) {
+                    console.log("break statement");
+                    break;
+                }
+                console.log(j);
+            }
+            console.log("j is present inside the loop, it cannot be accessed outside the loop")
+
+            console.log("do-while example");
+            let k = 10;
+            do {
+                console.log(k);
+                k--;
+            } while ( k >= 5 );
+
+        </script>
+    </body>
+</html>

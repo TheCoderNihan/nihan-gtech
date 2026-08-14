@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Arrays</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">JS Arrays</h1>
+        <p>Array is a data structure used to store multiple values in a single variable, where each value is accessed by an index.</p>
+        <h3 style="text-align: center;">Array Operations</h3>
+        <ul>
+            <li>array.length — Returns the number of elements in the array.</li>
+            <li>array.push("Kiwi") — Adds one or more elements to the end of the array.</li>
+            <li>array.pop() — Removes and returns the last element of the array.</li>
+            <li>array.unshift("Kiwi") — Adds one or more elements to the beginning of the array.</li>
+            <li>array.shift() — Removes and returns the first element of the array.</li>
+            <li>array[0] — Accesses the first element of the array using its index.</li>
+            <li>array[array.length - 1] — Accesses the last element of the array.</li>
+            <li>array[index] — Accesses an element using its index.</li>
+
+            <li><strong>Array Methods</strong></li>
+            <li>array.includes("Apple") — Checks whether the array contains a specified element and returns `true` or `false`.</li>
+            <li>array.indexOf("Apple") — Returns the index of the first occurrence of a specified element, or `-1` if not found.</li>
+            <li>array.join(", ") — Combines all array elements into a single string using the specified separator.</li>
+            <li>array.reverse() — Reverses the order of the elements in the array.</li>
+            <li>array.sort() — Sorts the elements of the array.</li>
+            <li>array.slice(1, 3) — Returns a portion of an array without modifying the original array.</li>
+        </ul>
+        <p>push(), pop(), unshift(), shift(), reverse(), and sort() modify the original array.</p>
+        <p>slice() does not modify the original array; it creates and returns a new portion of the array.</p>
+        <p>Press F12.</p>
+
+        <script>
+            let fruits = [ "Apple", "Banana", "Orange"];
+            let length = fruits.length;
+            console.log("Length of array is "+length);
+
+            fruits.push("Mango");
+            console.log("After push :"+fruits);
+            console.log("Now length is "+fruits.length);
+
+            fruits.pop();
+            console.log("After pop:"+fruits);
+
+            fruits.unshift("Kiwi");
+            console.log("After unshift :"+fruits);
+
+            fruits.shift();
+            console.log("After shift:"+fruits);
+
+            array_first_element = fruits[0];
+            console.log("First element of array accessed using index is "+array_first_element);
+
+            array_last_element = fruits[fruits.length - 1];
+            console.log("Last element of array accessed using index is "+array_last_element);
+            console.log("Access elements in array using its index value in array[index].")
+
+            console.log("Array includes Elephant :"+fruits.includes("Elephant"));
+            console.log("Return index of Banana: "+fruits.indexOf("Banana"));
+            
+            fruits_string = fruits.join("<");
+            console.log("Array as string with < seperator "+fruits_string);
+
+            console.log("Reversed array: "+fruits.reverse());
+            console.log("Now array is modified "+fruits);
+
+            console.log("Array sorted in alphabetical ascending order is "+fruits.sort());
+            console.log("Now array is modified "+fruits);
+
+            let portion = fruits.slice(1,3); // start , end-1
+            console.log("Array slice: "+portion);
+            console.log("Original array is unmodified: "+fruits);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Conditional Statements</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">JS Conditional Statements</h1>
+        <p>Conditional Statements are decision making statements.</p>
+        <p>if...else used to check if 1 conditions exists.</p>
+        <p>if...else if...else used if multiple conditions exist.</p>
+        <p>a switch statement is used to compare 1 value against several possible values.</p>
+        <p>A default is used in a switch statement to run if none of the case values match the switch expression.</p>
+        <p>Press F12</p>
+
+        <script>
+            let age = 18;
+            if ( age >= 18) {
+                console.log("You are eligible to vote");
+            } else {
+                console.log("Sorry , you can not vote.")
+            }
+
+            let mark = 55;
+            if ( mark >= 90) {
+                console.log("S grade");
+            } else if ( mark >= 40 && mark < 90) {
+                console.log("Pass");
+            } else {
+                console.log("Fail");
+            }
+
+            let day = 8;
+            switch (day) {
+                case 1:
+                    console.log("Monday");
+                    break;
+                case 2:
+                    console.log("Tuesday");
+                    break;
+                case 3:
+                    console.log("Wednesday");
+                    break;
+                default:
+                    console.log("Invalid Input")
+            }
+
+
+        </script>
+    </body>
+</html>
