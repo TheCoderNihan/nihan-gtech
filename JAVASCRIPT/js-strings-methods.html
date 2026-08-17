@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS String Methods</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">JS String Methods</h1>
+        <p>String functions/methods are built-in JS methods used to inspect, modify, search, or extract parts of text.</p>
+        <p><strong>Strings are immutable</strong>: Once a string is created, its original value cannot be changed;
+           string methods such as toUpperCase(), replace(), and trim() return a new string instead of modifying the original string.</p>
+        <h2 style="text-align: center;">Common String Methods</h2>
+        <ul>
+            <li>text.length — Returns the number of characters in a string.</li>
+            <li>text.toUpperCase() — Converts all letters in the string to uppercase.</li>
+            <li>text.toLowerCase() — Converts all letters in the string to lowercase.</li>
+            <li>text.slice() — Extracts and returns a portion of a string.</li>
+            <li>text.replace() — Replaces the first matching occurrence of specified text.</li>
+            <li>text.includes() — Checks whether the string contains specified text and returns true or false.</li>
+            <li>text.trim() — Removes whitespace from the beginning and end of a string.</li>
+            <li>text.charAt() — Returns the character at a specified index.</li>
+            <li>text.split() — Splits a string into an array based on a specified separator.</li>
+        </ul>
+        <p>Press F12</p>
+
+        <script>
+            let example = "Hello World";
+            console.log("Length of string is "+example.length); //blank space is counted
+            console.log(example.toUpperCase());
+            console.log(example.toLowerCase());
+
+            let example_slice = example.slice(0,8); //from start to end-1
+            console.log("Sliced string is "+example_slice);
+
+            console.log("Replaced String: "+example.replace("World" , "Javascript"));
+            console.log("The original string is not replaced: "+example);
+
+            console.log("Includes Javascript: "+example.includes()); //Returns boolean value
+
+            let xyz = "     Web Development     ";
+            console.log(xyz);
+            console.log("Trimmed String: "+xyz.trim());
+
+            console.log("Character at index 4: "+example.charAt(4));
+
+            let example_array = example.split(",");
+            console.log("Array by split method: "+example_array);
+        </script>
+    </body>
+</html>

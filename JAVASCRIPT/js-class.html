@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Class</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">JS Classes</h1>
+        <p>A Class is a blueprint or template used to create objects. 
+           "new" is used to create an object from a class.</p>
+        <p>A method is a function displayed inside a class. ".method_name()" is used to run the function.</p>
+        <p>A constructer is a special method. A constructor automatically runs when an object is created using new.
+           Constructors are commonly used to initialize an object's data when it is created.
+        </p>
+        <p>this: Refers to the current object and is commonly used to access or initialize its properties and methods.<br>
+            Eg: constructor(name) {<br>
+                  this.name = name;}<br>
+            Here "name" is the parameter recieved by the constructer, "this.name" property belongs to the object.
+        </p>
+        <p>Press F12.</p>
+
+        <script>
+            
+            class Student {
+                constructor() {
+                    console.log("A constructer is called and will run automatically when a object is created");
+                }
+                
+                show_method() {
+                    console.log("This is a method, this needs to be called");
+                }
+            }
+            let xyz = new Student(); // constructer is automatically called
+            xyz.show_method(); //method is called
+
+            let abc = new Student();
+            console.log("The class( and constructer) will run for each object. method of an object will only run if that object calls the method.");
+
+            // Class , constructer , method example
+            class Employee {
+                constructor( id , name , salary) { // the constructer parameters can only be used inside the constructer
+                    this.id = id;
+                    this.name = name;
+                    this.salary = salary;
+                }
+
+                display() {
+                    console.log("ID: "+this.id);
+                    console.log("NAME: "+this.name);
+                    console.log("SALARY: "+this.salary);
+                }
+            }
+
+            let emp1 = new Employee( 101 , "John" , 10000 );
+            emp1.display();
+            let emp2 = new Employee( 102 , "Doe" , 5000);
+            emp2.display();
+            
+            let emp3 = new Employee( 103 , "Ben" , 3000);
+            console.log("Employee 3 name: "+emp3.name); // Accesses and prints property of the object
+
+        </script>
+    </body>
+</html>
