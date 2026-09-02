@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Intro</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <h1 style="text-align: center;">jQuery Introduction</h1>
+        <p>jQuery is a fast, lightweight JS library to make JS programming shorter.</p>
+        <p>You need to either download it or use CDN to include the jQuery library in the code.</p>
+        <p>
+            The basic syntax is <strong>$(selector).action();</strong>
+            <br>where $ → jQuery symbol
+            <br>selector → HTML element (id, class, tag)
+            <br>action() → What you want to do 
+        </p>
+        <p>
+            Example : $document.ready()
+            <br>'document' represents the entire HTML webpage ; 'ready()' ensures HTML page loads fully before jQuery runs.
+        </p>
+        <p># is used as the id-selector in jQuery.</p>
+        
+        <!--Code-->
+        <p id="text">Welcome</p>
+        <button id="btn">Change Text</button>
+
+        <script>
+            $(document).ready(function() {
+                $("#btn").click(function() {
+                    $("#text").text("Welcome to jQuery!");
+                });
+            }); // } closes function; ) closes ready and ; ends the function
+        </script>
+    </body>
+</html>

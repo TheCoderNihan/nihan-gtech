@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Accessing HTML Controls</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Accessing HTML controls using jQuery</h2>
+        <p># is used as id-selector in jQuery.</p>
+        <p>.val() is used to get or set the value of form controls.</p>
+        <p>:checked select the one that is currently checked/selected.</p>
+        <p>.is(":checked") check whether that element is checked. Results a boolean value.</p>
+        <p>.text() handles text, while .html() handles text containing HTML tags.</p>
+        <p>The event tells you WHEN something should happen. The function tells you WHAT should happen.</p>
+
+        <!--Code-->
+        <label>Name:</label> <!--Textbox-->
+        <input type="text" id="name"> <br><br>
+
+        <label>Address:</label> <!--Textarea-->
+        <textarea id="address"></textarea> <br><br>
+
+        <label>Course:</label> <!--Dropdown-->
+        <select id="course">
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="Django">Django</option>
+        </select> <br><br>
+
+        <label>Gender:</label> <!--Radio Buttons-->
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female <br><br>
+
+        <input type="checkbox" id="agree"> I Agree <br><br> <!--Checkbox-->
+
+        <button id="btn">Submit</button> <!--Button-->
+
+        <p id="result"></p> <!--For printing output-->
+
+        <script> // jQuery Code
+
+            $(document).ready(function() { // Ensures HTML page fully loads before jQuery loads
+
+                $("#btn").click(function() {  // When button is clicked
+
+                    let name = $("#name").val(); // Accessing values
+                    let address = $("#address").val();
+                    let course = $("#course").val();
+                    let gender = $("input[name='gender']:checked").val(); // Gets the checked value
+                    let agree = $("#agree").is(":checked");
+
+                    $("#result").html(  // .html() handles text containing HTML tags
+                        "Name: " + name + " <br>" +
+                        "Address: " + address + " <br>" +
+                        "Course: " + course + " <br>" +
+                        "Gender: " + gender + " <br>" +
+                        "Agree: " + agree
+                    )
+                });
+            }); 
+        </script>
+
+    </body>
+</html>
