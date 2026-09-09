@@ -16,7 +16,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  <!--Navigation Bar-->
             <div class="container">
-                <a class="navbar-brand" href="#">Mohammad Nihan Hisham</a>
+                <a class="navbar-brand" href="#home">Mohammad Nihan Hisham</a>
 
                 <!--Toggler button for phones-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
@@ -50,24 +50,26 @@
             </div>
         </nav>
 
-        <section id="home" class="container-fluid"> <!--Home-->
+        <section id="home" class="container-fluid d-flex align-items-center justify-content-center"> <!--Home-->
+            <!--d-flex makes #home a flex container; align-i-c centers content vertically; justify-c-c centers content horizontally-->
+
             <div class="text-center">
                 <p class="role">Software Developer</p>
 
                 <h1>
                     Building Software <br>
-                    <span>
+                    <span class="home-highlight">
                         that creates value
                     </span>
                 </h1>
 
-                <p>
+                <p class="home-description">
                      Computer Science Engineering student interested in web development, technology and building useful products.
                 </p>
 
-                <div>
-                    <a href="#projects">View My Work</a>
-                    <a href="#contact">Get in Touch</a>
+                <div class="d-flex justify-content-center gap-3"> <!--gap provides space btw buttons-->
+                    <a href="Nihan_Resume.pdf" class="btn btn-outline-success btn-lg">View Resume</a>
+                    <a href="#contact" class="btn btn-primary btn-lg">Get in Touch</a>
                 </div>
             </div>
         </section>

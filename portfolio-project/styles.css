@@ -8,12 +8,12 @@ body {
     font-weight: 600;
 }
 
-.navbar-link {
-    font-weight: 500;
+.nav-link {
+    font-weight: 600;
 }
 
 #home {
-    min-height: 100vh; /*vh is vissible browser area , 100vh makes it full screen*/
+    min-height: calc(100vh - 56px);; /*vh is visible browser area, 100vh makes it full screen, 56px is aproximate navbar height*/
 
      background: linear-gradient( /*gradient color from top to bottom*/
         to bottom,
@@ -24,14 +24,27 @@ body {
 }
 
 #home h1 {
-    font-size: 60px;
+    font-size: 4rem; /*rem is relative css unit, the default is 1rem is 16px*/
+    font-weight: 600; /*font-weight is used for boldness*/
+}
+
+.home-description {
+    font-size: 25px;
 }
 
 .role {
     display: inline-block; /*p tag occupies whole available width , we can control it manually using inline-block*/
     font-size: large;
-    border: 1px solid blue; /*thickness style color*/
+    color: blue;
+    background-color: rgba(66, 133, 244, 0.08); /*the fourth parameter denotes opacity*/
+    border: 1px solid rgba(66, 133, 244, 0.25); /*thickness style color*/
     border-radius: 50px;
-    margin-top: 100px;
     padding: 8px 8px 8px 8px;
+}
+
+.home-highlight {
+    background: linear-gradient(to right, #4285f4, #8a2be2); /*makes the background gradient*/
+    background-clip: text; /*make the background visible only where the text exists*/
+    -webkit-background-clip: text; /*for compatibility in webkit browsers*/
+    color: transparent; /*makes original text color transparent so that the gradient can be seen*/
 }
