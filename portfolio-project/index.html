@@ -10,11 +10,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> <!--Poppins-->
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!--BS Icons-->
         <link rel="stylesheet" href="styles.css">  <!--Better for css to come after bootstrap-->
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  <!--Navigation Bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">  <!--Navigation Bar; sticky-top makes navbar remain while scrolling--> 
             <div class="container">
                 <a class="navbar-brand" href="#home">Mohammad Nihan Hisham</a>
 
@@ -43,7 +44,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -68,13 +69,86 @@
                 </p>
 
                 <div class="d-flex justify-content-center gap-3"> <!--gap provides space btw buttons-->
-                    <a href="Nihan_Resume.pdf" class="btn btn-outline-success btn-lg">View Resume</a>
+                    <a href="Nihan_Resume.pdf" target="_blank" class="btn btn-outline-success btn-lg">View Resume</a> <!--_blank opens new page-->
                     <a href="#contact" class="btn btn-primary btn-lg">Get in Touch</a>
                 </div>
             </div>
         </section>
 
+        <!--Contact-->
+        <section id="contact">
 
+            <div class="text-center"> <!--Get in Touch-->
+                <h1>Get in Touch</h1>
+                <p>I am always open to new opportunities,<br>
+                    interesting projects and meaningful conversations.
+                </p>
+            </div>
+
+            <div class="container"> <!--Two sides-->
+                <div class="row">
+
+                    <div class="col-md-6"> <!--Contact Details-->
+                        <h2>Contact Details</h2>
+                        
+                        <div class="contact-item">
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>nihanhisham3000@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="bi bi-telephone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>999999999</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Kerala , India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6"> <!--Find me online-->
+                        <h2>Find Me Online</h2>
+                        <p>
+                            Connect with me on these platforms where I share my work and updates.
+                        </p>
+
+                        <a href="https://www.linkedin.com/in/nihan-hisham/" target="_blank" class="social-link"> <!--target="_blank" opens a new page-->
+                            <i class="bi bi-linkedin"></i> <!--Linkedin-->
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <p>linkedin.com/in/nihan-hisham</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/TheCoderNihan" target="_blank" class="social-link"> <!--GitHub-->
+                            <i class="bi bi-github"></i>
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>github.com/TheCoderNihan</p>
+                            </div>
+                        </a>
+
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nihanhisham3000@gmail.com" target="_blank" class="social-link"> <!--Email-->
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>nihanhisham3000@gmail.com</p>
+                            </div>
+                        </a>
+                     </div>
+                </div>
+            </div>
+        </section>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>

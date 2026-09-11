@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth; /*Makes the scroll animation smooth when visiting sections*/
+}
+
 body {
     font-family: 'Poppins', sans-serif; /*Here sans-serif is the fallback font i.e used if poppins not used*/
     font-weight: 400;
