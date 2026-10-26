@@ -27,3 +27,14 @@ x = "John" #Variable type canbe changed
 print(x) 
 print(type(x)) #To get type of a variable
 
+# Rules for variable names
+# A variable name must start with a letter or the underscore character
+# A variable name cannot start with a number
+# A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+# Variable names are case-sensitive (age, Age and AGE are three different variables)
+# A variable name cannot be any of the Python keywords ( eg. if , else , while , try etc. )
+
+print("Variables that are created outside of a function are known as global variables." \
+"Global variables can be used everywhere, both inside of functions and outside.") #Global Variables
+
+print("Local variables are created inside a function and can only be used there.") #Local Variables
